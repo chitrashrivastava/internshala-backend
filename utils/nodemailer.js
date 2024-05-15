@@ -14,14 +14,14 @@ exports.sendmail = (req, url1,res, url, next) => {
     });
 
     const mailoptions = {
-        from: 'Pranjal PVT LTD. <pranjalshukla245@gmail.com>',
+        from: 'Chitra PVT LTD. <chitrashrivastava64@gmail.com>',
         to: req.body.email,
         subject: 'Password Reset Link',
         html: `<h1>Hello,</h1>
         <p>We received a request to reset your password. Click the link below to proceed:</p>
         <a href="${url}" style="display:inline-block; padding: 10px 20px; background-color: #3498db; color: #ffffff; text-decoration: none; border-radius: 5px;">Reset Password</a>
         <p>If you did not request a password reset, please ignore this email.</p>
-        <p>Thank you,<br/>Pranjal PVT LTD.</p>
+        <p>Thank you,<br/>Chitra PVT LTD.</p>
         `
     };
 
